@@ -1,0 +1,158 @@
+body,
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#heading {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    background: black;
+    color: white;
+    width: 200px;
+    padding: 20px 0;
+    height: calc(100vh - 60px);
+    position: absolute;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin: 25px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: grey;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: grey;
+}
+
+#pic1 {
+    height: 500px;
+    padding-left: 200px;
+    rotate: 2deg;
+
+}
+
+#pic2 {
+    height: 300px;
+    width: 600px;
+    padding-left: 200px;
+}
+
+#pic3 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 250px;
+    width: 600px;
+    padding-bottom: 100px;
+}
+
+#pic4 {
+    width: 500px;
+    padding-left: 200px;
+}
+
+p {
+    width: 1000px;
+}
+
+#peoria {
+    width: 600px;
+}
+
+#peoriaaside {
+    padding-top: 400px;
+    width: 600px;
+}
+
+#capitalaside {
+    margin-top: 600px;
+    width: 200px;
+    position: absolute;
+}
+
+p.image {
+    position: relative;
+    float: right;
+    width: 400px;
+}
+
+table {
+    margin: 14px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    padding: 7px;
+    width: 98%;
+    padding-right: 25px;
+    border: 1px solid;
+}
+
+td {
+    vertical-align: top;
+    padding: 7px;
+    border: 1px solid;
+}
+
+#form1 {
+    padding-right: 500px;
+    padding-top: 100px;
+}

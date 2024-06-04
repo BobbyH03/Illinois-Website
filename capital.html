@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="heading">Springfield</h1>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chicago.html">Chicago</a></li>
+                <li><a href="city1.html">Peoria</a></li>
+                <li><a href="capital.html">Capital</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h2>The capital of Illinois and the home of Abraham Lincoln.</h2>
+            </header>
+            <section>
+                <p class="image"><img id="pic4" src="assets/Springfield.jpg" alt="Picture of Springfield"></p>
+                <p>Springfield is the capital of Illinois and the late home of Abraham Lincoln, where he resided for
+                    almost 30 years. Springfield has a very long history and is now where the Government of the state of
+                    Illinois resides. </p>
+            </section>
+            <form id="form1">
+                <label for="fname">First name:</label><br>
+                <input type="text" placeholder="Enter First Name" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" placeholder="Enter Last Name" id="lname" name="lname"><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" placeholder="Enter Email Address" id="email" name="email"><br>
+                <label for="confirmEmail">Confirm Email Address</label><br>
+                <input type="email" placeholder="Confirm Email" id="confirmEmail" name="confirmEmail"><br>
+                <label for="question">Ask a question</label><br>
+                <input type="text" placeholder="Ask any question" id="question" name="question">
+                <button type="submit">Submit</button>
+                <p id="error-message" class="error"></p>
+            </form>
+            <aside id="capitalaside">
+                <p>Springfield is an urban city located in central Illinois and holds a population of around 115,000
+                    people, making it the largest city in central Illinois. This city, the capital of Illinois was
+                    incorporated in the year 1821 and has the average income of about $81,000.
+                </p>
+            </aside>
+        </main>
+        <script>
+            document.getElementById('form1').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var email = document.getElementById('email').value;
+                var confirmEmail = document.getElementById('confirmEmail').value;
+                var errorMessage = document.getElementById('error-message');
+
+                if (email !== confirmEmail) {
+                    errorMessage.textContent = 'Emails do not match.';
+                } else {
+                    errorMessage.textContent = '';
+
+                    alert('Emails match!');
+                }
+            });
+        </script>
+</body>
+
+</html>
